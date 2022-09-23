@@ -1,0 +1,70 @@
+types of css: inline,internal,external
+selectors: tag,universal,group,#id,.class
+background:
+	background-color:colorname/rgb(100,100,100)/#hexvalue
+	background-image:url(path_of_image)
+	background-repeat:repeat,no-repeat,repeat-x,repeat-y
+	background-attachment:fixed;
+	background-position:left,left top,left bottom, right, right-top,
+						right bottom, top, center,bottom
+	background-size:width height
+	
+	background:color image repeat attachment position;
+	
+border:
+	//same for all 4 sides
+	border-left-style: 
+	border-left-color:
+	border-left-width:
+	
+	border-style:solid/double/dotted/dashed/inset/outset/groove/ridge/none/hidden
+	border-color:rgb/hex/colorname
+	border-width:in pixels
+	
+	border:width style color;
+	
+text-decoration:none/underline/overline/line-through
+text-transform:uppercase/lowercase/capitalize;
+text-align:left/right/center/justify
+text-indent: 100px;
+word-spacing:10px;
+letter-spacing:10px;
+line-height:10px;
+direction:rtl/ltr;
+
+margin:
+	margin-left:
+	margin-right:
+	margin-top:
+	margin-bottom:
+	
+	margin:top right bottom left;
+	margin: top-bottom left-right;
+	margin:all-sides;
+	//value in px/mm/cm/in 
+	//value=auto for left and right
+	
+padding:
+	padding-left:
+	padding-right:
+	padding-top;
+	padding-bottom:
+	padding: top right bottom left;
+	padding:top-bottom left-right;
+	padding:all-sides;
+	//value in px/cm/mm/in
+	//no auto value;
+	
+color:colorname/rgb()/#hexvalue	
+	
+	
+	
+	
+	
+
+
+
+
+
+	
+	
