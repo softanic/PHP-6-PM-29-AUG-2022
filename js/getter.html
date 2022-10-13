@@ -1,0 +1,23 @@
+<html>
+	<head>
+	
+	</head>
+	<body>
+		<script>
+			function calc()
+			{	
+				var no1=parseInt(document.getElementById('number1').value);
+				var no2=parseInt(document.getElementById('number2').value);
+				let ans=no1+no2;
+				document.getElementById('ans').value=ans;
+			}	
+		</script>
+		<input type="number" id="number1" >
+		+
+		<input type="number" id="number2">
+		<button onclick="calc()">=</button>
+		<input type="number" id="ans">
+		
+		
+	</body>
+</html>

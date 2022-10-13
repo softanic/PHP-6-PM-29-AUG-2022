@@ -1,0 +1,28 @@
+<html>
+	<head>
+	
+	</head>
+	<body>
+		<script>
+			function table()
+			{
+				
+				let no=document.getElementById('number').value;
+				var data="";
+				for(i=1;i<=10;i++)
+				{
+					data += i*no+" ";
+					//alert(data);
+				}
+				document.getElementById("output").innerHTML=data;
+				
+			}
+			
+		</script>
+		<input type="number" id="number">
+		<button onclick="table()">click here to generate table</button>
+		<div id="output" style="border:1px solid red">
+			output goes here...
+		</div>
+	</body>
+</html>

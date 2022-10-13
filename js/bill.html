@@ -1,0 +1,67 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<script>
+			function gen_bill()
+			{
+				let pr=document.getElementById('pre_reading').value;
+				let cr=document.getElementById('current_reading').value;
+				let c=cr-pr;
+				document.getElementById('pr').innerHTML=pr;
+				document.getElementById('cr').innerHTML=cr;
+				document.getElementById('consumption').innerHTML=c;
+				//c=500;
+				let amount=0;
+				if(c<=100)
+				{
+					amount= c*4;
+					//alert(amount)
+				}else if(c>100 && c<=200)
+				{
+					c=c-100;
+					amount=c*6;
+					amount+=400;
+				}else if(c>200 && c<=300)
+				{
+					c=c-200;
+					amount=c*7;
+					amount+=1000;
+				}else 
+				{
+					c=c-300;
+					amount=c*9;
+					amount+=1700;
+				}
+				
+				document.getElementById('amount').innerHTML=amount;
+
+				
+			}
+		</script>
+		<input type="number" id="pre_reading" placeholder="Previous">
+		<input type="number" id="current_reading" placeholder="current">
+		<input type="button" id="btn" value="Generate Bill" onclick="gen_bill()">
+		<div id="output"> 
+		<br>
+			<table border=1>
+				<tr>
+					<th>Pre. reading</th>
+					<td id="pr">-</td>
+				</tr>
+				<tr>
+					<th>Current. reading</th>
+					<td id="cr">-</td>
+				</tr>
+				<tr>
+					<th>Consumption</th>
+					<td id="consumption">-</td>
+				</tr>
+				<tr>
+					<th>Bill Amount</th>
+					<td id='amount'>-</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<script>
+			function change_img(path)
+			{
+				document.getElementById('image').src=path;
+			
+			}
+		</script>
+	</head>
+	<body>
+		<img id='image' src="background.jpg" height="200" width="500">
+		<br><br>
+		<button onclick="change_img('background.jpg')">Img 1</button>
+		<button onclick="change_img('background.png')">Img 2</button>
+		<button onclick="change_img('background2.jpg')">Img 3</button>
+	</body>
+</html>

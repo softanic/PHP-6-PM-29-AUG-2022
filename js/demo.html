@@ -1,0 +1,27 @@
+<html>
+	<head>
+	
+	</head>
+	<body>
+		<script>
+			function show()
+			{	
+				if(document.getElementById('btn').innerHTML=='show')
+				{
+				document.getElementById('demo').type="text";
+				document.getElementById('btn').innerHTML="hide";
+				}else{
+				
+					document.getElementById('demo').type="password";
+					document.getElementById('btn').innerHTML="show";
+				}
+				
+			}	
+		</script>
+		<input type="password" id='demo'>
+		
+		<button id="btn" onclick="show()">show</button>
+		
+		
+	</body>
+</html>
