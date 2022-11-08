@@ -1,0 +1,18 @@
+<html>
+	<head>
+	
+	</head>
+	<body>
+		<script>
+		function output(name)
+		{
+			//var name=document.getElementById('name').value;
+			document.getElementById('output').innerHTML=name.length;
+		
+		}
+		
+			//alert(name.length);
+		</script>
+		<input type="text" onkeyup='output(this.value)' id="name" placeholder="enter name"><span id="output"> 0</span>		
+	</body>
+</html>

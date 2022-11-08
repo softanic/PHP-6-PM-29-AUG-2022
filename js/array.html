@@ -1,0 +1,24 @@
+<html>
+	<head>
+	
+	</head>
+	<body>
+		<script>
+			var no=['pratik','himanshu','nikita','aatif'];
+			for(i=0;i<=3;i++)
+			{
+				//document.write("<li>welcome "+no[i]+"</li>");
+				//welcome(no[i]);
+			}
+			no.forEach(welcome);
+			no.push('vaishnavi');
+			no.forEach(welcome);
+			no.pop();
+			function welcome(n)
+			{
+				alert("welcome "+n);
+			}
+		</script>
+		
+	</body>
+</html>
