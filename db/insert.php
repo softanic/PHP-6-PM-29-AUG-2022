@@ -7,7 +7,7 @@ $gender=$_POST['gender'];
 
 
 $con=mysqli_connect("localhost","root","","php6pm") or die('not connectedddd');
-$q="insert into users values(NULL,'$name','$mobile_no','$email_id','$password','$gender')";
+$q="insert into users ('mobile_no','name','email_id','password','gender') values('$mobile_no','$name','$email_id','$password','$gender')";
 $result=mysqli_query($con,$q);
 if($result)
 {

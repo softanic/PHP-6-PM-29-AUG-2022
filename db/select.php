@@ -5,19 +5,33 @@ $result=mysqli_query($con,$q);
 //echo mysqli_num_rows($result);
 
 echo "<table border=1>";
-echo "<tr><th>user Id</th><th>name</th><th>mobile no</th><th>email id </th><th>password</th><th>gender</th></tr>";
-while($data=mysqli_fetch_row($result))
+echo "<tr><th>user Id</th>
+		<th>name</th>
+		<th>mobile no</th>
+		<th>email id </th>
+		<th>city</th>
+		<th>password</th>
+		<th>gender</th>
+		<th>Delete</th>
+	</tr>";
+//while($data=mysqli_fetch_row($result))
+//while($data=mysqli_fetch_assoc($result))
+while($data=mysqli_fetch_array($result))
 {
 	//echo "<pre>";
+	//print_r($data);
 	echo "<tr>";
-	echo "<td>$data[0]</td>";
-	echo "<td>$data[1]</td>";
-	echo "<td>$data[2]</td>";
-	echo "<td>$data[3]</td>";
-	echo "<td>$data[4]</td>";
-	echo "<td>$data[5]</td>";
+	echo "<td>".$data['user_id']."</td>";
+	echo "<td>{$data['name']}</td>";
+	echo "<td>{$data['mobile_no']}</td>";
+	echo "<td>{$data['email_id']}</td>";
+	echo "<td>{$data['city']}</td>";
+	echo "<td>{$data['password']}</td>";
+	echo "<td>{$data['gender']}</td>";
+	echo "<td><a onclick='return confirm(\"are u sure want to delete? \")' href='delete.php?user_id={$data['user_id']}'>Delete</a></td>";
 	echo "</tr>";
+	
 	//echo "<li>". $data[1]."</li>";
 }
-echo "</ol>";
+echo "</table>";
 ?>
