@@ -7,6 +7,11 @@ $name="dhaval pradhan";
 //echo var_dump(strpos($name,'z'));
 //echo strtoupper($name);
 //echo strtolower($name);
-echo ucfirst($name);
-echo ucwords($name);
+//echo ucfirst($name);
+//echo ucwords($name);
+
+echo md5('this is my password nobody can hack');
+echo "<br>";
+
+echo md5('abcd');
 ?>
