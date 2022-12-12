@@ -8,7 +8,9 @@ if(!isset($_SESSION['user_data']))
 }
 $user=$_SESSION['user_data'];
 echo 'welcome '. $user['name'];
+//echo time();
 ?>
+<img src="<?php echo $user['dp']; ?>" height=200 width=200>
 <br>
 <a href="password-change.php">change Password</a>
 <br>

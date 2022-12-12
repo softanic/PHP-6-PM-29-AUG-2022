@@ -31,7 +31,7 @@
 					</form>
 				</th>
 				<th>
-					<form action='signup-save.php' method="post">
+					<form action='signup-save.php' method="post" enctype="multipart/form-data">
 					<table>
 						<tr>	
 							<td>
@@ -70,6 +70,12 @@
 									<option>Male</option>
 									<option>female</option>
 								</select>
+							</td>
+						</tr>
+						<tr>	
+							<td>
+								<label>Photo</label><br>
+								<input type="file" name="dp" accept="image/*">
 							</td>
 						</tr>
 						<tr>	
